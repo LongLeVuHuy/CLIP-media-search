@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Media Search AI</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+    <main class="app-container">
+
+        <aside class="sidebar">
+            <div>
+                <p class="label">AI MEDIA SEARCH</p>
+
+                <h1>
+                    Tìm kiếm ảnh và video
+                </h1>
+
+                <p class="description">
+                    Nhập mô tả bằng tiếng Việt hoặc tiếng Anh.
+                </p>
+            </div>
+
+            <form id="searchForm">
+                <label for="queryInput">
+                    Bạn muốn tìm gì?
+                </label>
+
+                <textarea
+                    id="queryInput"
+                    placeholder="Ví dụ: người đang đi xe đạp trên đường"
+                    required
+                ></textarea>
+
+                <div class="option-row">
+                    <label for="topK">
+                        Số kết quả
+                    </label>
+
+                    <select id="topK">
+                        <option value="6">6</option>
+                        <option value="12" selected>12</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+
+                <button
+                    id="searchButton"
+                    type="submit"
+                >
+                    Tìm kiếm
+                </button>
+            </form>
+
+            <div
+                id="status"
+                class="status"
+            >
+                Sẵn sàng tìm kiếm.
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="content-header">
+                <div>
+                    <p class="label">
+                        KẾT QUẢ PHÙ HỢP NHẤT
+                    </p>
+
+                    <h2 id="resultTitle">
+                        Chưa có kết quả
+                    </h2>
+                </div>
+
+                <span
+                    id="resultCount"
+                    class="count"
+                >
+                    0
+                </span>
+            </div>
+
+            <div
+                id="resultsGrid"
+                class="results-grid"
+            >
+                <div class="empty">
+                    Ảnh và video sẽ xuất hiện tại đây.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
