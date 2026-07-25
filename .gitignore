@@ -1,0 +1,16 @@
+# Không đưa dữ liệu ảnh/video lên GitHub
+input_media/*
+!input_media/.gitkeep
+
+# Không đưa cơ sở dữ liệu vector lên GitHub
+media_clip.json
+media_clip.json.tmp
+
+# File dataset nén
+clip_test_dataset.zip
+
+# Môi trường và file tạm
+.venv/
+__pycache__/
+.vs/
+*.pyc

@@ -1,0 +1,8 @@
+numpy
+Pillow
+opencv-python
+torch
+sentence-transformers
+watchdog
+datasets
+huggingface-hub
